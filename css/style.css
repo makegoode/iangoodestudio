@@ -704,10 +704,17 @@ footer {
 @media (max-width: 600px) {
   .about-layout {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-photo-col {
+    display: flex;
+    justify-content: center;
   }
 
   .about-photo {
-    max-width: 260px;
+    max-width: 300px;
+    border-radius: 24px 0 0 24px;
   }
 }
 
