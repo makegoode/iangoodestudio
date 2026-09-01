@@ -734,7 +734,7 @@ footer {
 
   .gallery-sizer,
   .gallery-item {
-    width: calc(50% - 5px);
+    width: calc(50% - 8px);
   }
 
   .gallery-item {
