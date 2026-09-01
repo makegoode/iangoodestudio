@@ -803,6 +803,10 @@ footer {
     gap: 32px;
   }
 
+  .process-pair-item img {
+    height: 440px;
+  }
+
   .detail-images {
     grid-template-columns: 1fr;
   }
