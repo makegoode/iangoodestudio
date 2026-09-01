@@ -779,11 +779,28 @@ footer {
   }
 
   .method-intro {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
   }
 
-  .method-pen-img {
-    width: 60px;
+  .method-pen-img img {
+    width: 80px;
+    max-width: 80px;
+  }
+
+  .detail-split {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .detail-split-right img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .process-pair {
+    gap: 32px;
   }
 
   .detail-images {
