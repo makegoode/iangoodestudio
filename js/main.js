@@ -1,3 +1,12 @@
+// ─── Scroll header ────────────────────────────────────────────
+const header = document.querySelector('header');
+if (header) {
+  const onScroll = () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+
 // ─── Mobile nav ───────────────────────────────────────────────
 const menuBtn = document.querySelector('.mobile-menu-btn');
 const mobileNav = document.querySelector('.mobile-nav');

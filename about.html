@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — A Creative Holding Company</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
     </ul>
   </nav>
   <a href="/" class="logo">
-    <img src="https://images.squarespace-cdn.com/content/v1/689cb3c40119380789cd9a25/99e03f5f-c879-45f0-a9c3-4f6d353eaef5/Artboard+2+copy+9%404x.png?format=1500w" alt="A Creative Holding Company">
+    <img src="images/graphics/iangoodestudio-logo.webp" alt="A Creative Holding Company">
   </a>
   <button class="mobile-menu-btn" aria-label="Open menu">
     <span></span><span></span><span></span>
@@ -33,20 +34,20 @@
   <a href="/about.html">About</a>
 </nav>
 
-<main class="content-page">
+<main class="content-page about-page">
   <div class="content-inner">
 
-    <h1>Hi, I'm Ian</h1>
-
     <div class="about-layout">
-      <div class="about-text">
+      <div class="about-photo-col">
+        <img class="about-photo" src="images/profile_9_n.webp" alt="Ian Goode">
+      </div>
+      <div class="about-text-col">
+        <h1 class="about-h1">Hi, I'm Ian</h1>
+        <hr class="about-divider">
         <p>I'm a former tech design leader who once built tools to scale creativity at speed. Today my focus is smaller, slower, and more personal: my own creative practice. Instead of AI and systems built for many, I now work by hand, one line at a time. It's quiet work that rewards patience and attention.</p>
         <p>I've learned that speed can be powerful, but it often comes at the cost of depth. What I wanted was the space to notice details, to follow ideas carefully, and to let the process shape the outcome.</p>
         <p>This studio is built on patience, precision, and the belief that slowing down creates better work. It's a place for exploring ideas with care and for valuing process as much as results.</p>
         <a href="mailto:hello@iangoodestudio.com" class="about-email">hello@iangoodestudio.com</a>
-      </div>
-      <div>
-        <img class="about-photo" src="https://images.squarespace-cdn.com/content/v1/689cb3c40119380789cd9a25/16560c42-4447-4a65-af42-e6470fcae91e/profile_9_n.jpg" alt="Ian Goode">
       </div>
     </div>
 
@@ -54,11 +55,25 @@
 </main>
 
 <footer>
-  <ul class="footer-links">
-    <li><a href="https://www.instagram.com/iangoode/" target="_blank" rel="noopener">Instagram</a></li>
-    <li><a href="mailto:hello@iangoodestudio.com">hello@iangoodestudio.com</a></li>
-  </ul>
-  <span class="footer-copy">Ian Goode Studio, LLC</span>
+  <div class="content-inner">
+  <div class="footer-logo">
+    <a href="/">
+      <img src="images/graphics/footArtwork_logo.webp" alt="A Creative Holding Company">
+    </a>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-bottom">
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/iangoode/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="mailto:hello@iangoodestudio.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+      </a>
+    </div>
+    <span class="footer-copy">Ian Goode Studio, LLC</span>
+  </div>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>
