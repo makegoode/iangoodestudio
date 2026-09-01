@@ -807,6 +807,10 @@ footer {
     height: 440px;
   }
 
+  .process-pair-item:first-child img {
+    height: 600px;
+  }
+
   .detail-images {
     grid-template-columns: 1fr;
   }
