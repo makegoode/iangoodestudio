@@ -29,6 +29,19 @@ document.querySelectorAll('.nav-links a, .mobile-nav a').forEach(link => {
   }
 });
 
+// ─── Masonry gallery ──────────────────────────────────────────
+const galleryEl = document.querySelector('.gallery');
+if (galleryEl && typeof Masonry !== 'undefined') {
+  imagesLoaded(galleryEl, function() {
+    new Masonry(galleryEl, {
+      itemSelector: '.gallery-item',
+      columnWidth: '.gallery-sizer',
+      percentPosition: true,
+      gutter: 16
+    });
+  });
+}
+
 // ─── Gallery lightbox ─────────────────────────────────────────
 const lightbox = document.getElementById('lightbox');
 if (lightbox) {

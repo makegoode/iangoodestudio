@@ -152,13 +152,15 @@ header.scrolled {
 }
 
 .gallery {
-  columns: 4;
-  column-gap: 16px;
   padding: 16px;
 }
 
+.gallery-sizer,
 .gallery-item {
-  break-inside: avoid;
+  width: calc(25% - 12px);
+}
+
+.gallery-item {
   margin-bottom: 16px;
   overflow: hidden;
   cursor: pointer;
@@ -693,8 +695,9 @@ footer {
 /* ─── Responsive ─── */
 
 @media (max-width: 900px) {
-  .gallery {
-    columns: 3;
+  .gallery-sizer,
+  .gallery-item {
+    width: calc(33.333% - 11px);
   }
 }
 
@@ -726,9 +729,12 @@ footer {
   }
 
   .gallery {
-    columns: 2;
-    column-gap: 10px;
     padding: 10px;
+  }
+
+  .gallery-sizer,
+  .gallery-item {
+    width: calc(50% - 5px);
   }
 
   .gallery-item {
